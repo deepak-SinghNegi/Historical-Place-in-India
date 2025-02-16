@@ -13,9 +13,12 @@
             color: #333;
         }
         header {
+            
             margin-bottom: 40px;
         }
         nav {
+            /* position:fixed; */
+            
             background-image: linear-gradient(45deg, orange, white, green);
             padding: 10px;
             height: 50px;
@@ -25,13 +28,13 @@
         }
         nav a {
             color: white;
-            background-color: rgba(0, 0, 0, 0.6);
+            background-color: black;
             margin: 10px;
             padding: 10px 20px;
             border-radius: 20px;
             text-decoration: none;
             font-weight: bold;
-            transition: background-color 0.3s ease;
+            
         }
         nav a:hover {
             background-color: rgba(255, 255, 255, 0.8);
@@ -45,7 +48,7 @@
         }
         .item {
             background-color: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px black;
             border-radius: 10px;
             overflow: hidden;
             transition: transform .2s ease;
@@ -86,17 +89,33 @@
         .ft:hover {
             color: orange;
         }
+        h1{
+            text-align: center;
+        }
+        h3{
+            text-align: center;
+            color: #f4f4f9;
+            background-color: #333; 
+            padding: 10px;
+        }
+        p{
+            font-size: 18px;
+            margin-left: 30px;
+            margin-right: 20px;
+            line-height: 30px;
+        }
     </style>
 </head>
 <body>
     <header>
         <nav>
-            <a href="#" id="a">Home</a>
-            <a href="#" id="b">About</a>
+            <a href="#home" id="a">Home</a>
+            <a href="#about" id="b">About</a>
+            <a href="#contact" id="b">Contact</a>
         </nav>
     </header>
 
-    <div class="container">
+    <div class="container" id="home">
         <div class="item">
            <a href="https://en.wikipedia.org/wiki/Taj_Mahal" target="_blank"> <img src="https://www.holidify.com/images/attr_square/1020.jpg" alt="Taj Mahal" > </a>
             <h1>Taj Mahal</h1>
@@ -117,9 +136,31 @@
             <h1>Sanchi Stupa</h1>
             <p>Sanchi Stupa, one of the oldest stone structures in India, is a significant Buddhist monument built by Emperor Ashoka.</p>
         </div>
+        <div class="item">
+           <a href="https://en.wikipedia.org/wiki/Agra_Fort" target="_blank"> <img src="https://images.cnbctv18.com/wp-content/uploads/2022/08/Agra-Fort.jpg?impolicy=website&width=1200&height=900" alt="Agra fort" > </a>
+            <h1>Agra Fort</h1>
+            <p>Agra Fort is a UNESCO World Heritage site in Agra, Uttar Pradesh, India. It was built by Mughal emperor Akbar in 1565. The fort was the main residence of the Mughal emperors until 1638. </p>
+        </div>
+        <div class="item">
+            <a href="https://en.wikipedia.org/wiki/Ram_Mandir" target="_blank"> <img src="https://www.livemint.com/lm-img/img/2024/12/29/600x338/Ayodhya_Ram_Janmabhoomi_Temple_news_construction_1735462194132_1735462194980.jpg" alt="Ram Mandir"></a>
+            <h1>Ram Mandir</h1>
+            <p>The Ram Mandir in Ayodhya, India is a Hindu temple complex that was inaugurated in January 2024. It's believed to be the birthplace of Rama, a central figure in Hinduism. </p>
+        </div>
+        <div class="item">
+           <a href="https://en.wikipedia.org/wiki/Nalanda_mahavihara" target="_blank"> <img src="https://nalandauniversity.wordpress.com/wp-content/uploads/2011/03/nalanda_university.jpg " alt="Nlanda Mahavihara"></a>
+            <h1>Nlanda Mahavihara</h1>
+            <p>The ancient Nalanda University was located in the town of Rajgir in the Bihar state of India. The ruins of the university are still visible today. </p>
+        </div>
+        <div class="item">
+            <a href="https://en.wikipedia.org/wiki/Kedarnath_Temple" target="_blank"> <img src="https://www.manchalamushafir.com/things-to-know-about-the-kedarnath-temple/images/Top%20Places%20To%20Visit%20Near%20Kedarnath%20Temple.webp" alt="Shri Kedarnath Jyotirlinga Temple"></a>
+            <h1>Shri Kedarnath Jyotirlinga Temple</h1>
+            <p>Sanchi Stupa, one of the oldest stone structures in India, is a significant Buddhist monument built by Emperor Ashoka.</p>
+        </div>
     </div>
-
-    <footer>
+        <div id="about"><h3>About Us</h3>
+            <p>Welcome to Deep Travelers, your trusted guide to exploring India's rich history and heritage. We specialize in curating unforgettable journeys to the most iconic historical places in India, offering deep insights into their cultural and architectural significance. Whether it’s the grandeur of the Taj Mahal, the majestic forts of Rajasthan, or the ancient temples of South India, our expert team ensures a seamless and enriching travel experience. With personalized itineraries, knowledgeable guides, and exceptional service, we bring history to life, making every trip a journey through time. Let us take you on an adventure where the past meets the present!</p>
+        </div>
+    <footer id="contact">
         <a href="https://temp-mail.org/en/" class="ft">Contact</a>
         <a href="https://www.facebook.com/help/1058033620955509/" class="ft">Facebook</a>
         <a href="https://www.instagram.com/accounts/login/?hl=en" class="ft">Instagram</a>
