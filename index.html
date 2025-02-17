@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beautiful India</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -67,7 +68,7 @@
          h1 {
             text-align: center;
             font-size: 24px;
-            color: #444;
+            color: black;
             margin: 10px 0;
         }
         .item >p {
@@ -84,8 +85,8 @@
         }
         .ft {
             
-            margin: 10px 20px;
-            font-size: 18px;
+            
+            
             color: white;
             text-decoration: none;
             transition: color 0.3s ease;
@@ -93,19 +94,43 @@
         .ft:hover {
             color: orange;
         }
-        
-        h3{
-            text-align: center;
-            color: #f4f4f9;
-            background-color: #333; 
-            padding: 10px;
+        .con{
+            margin-left: 20%;
+            display: flex;
+            flex-direction: row;
+            gap:450px;
+            
         }
+        
+        
         p{
             font-size: 18px;
             margin-left: 30px;
             margin-right: 20px;
             line-height: 30px;
         }
+        #contact h1{
+            color: #f4f4f9;
+        }
+        #about h1{
+            
+            text-align: center;
+            color: #f4f4f9;
+            background-color: #333; 
+            padding: 10px;
+        }
+        pre{
+            font-size: 20px;
+            margin-left: 50px;
+        }
+        a{
+            text-decoration:none;
+            color: #f4f4f9;
+        }
+        a:hover{
+            color: orange;
+        }
+        
     </style>
 </head>
 <body>
@@ -159,13 +184,26 @@
             <p>Kedarnath is a town and Hindu temple in Uttarakhand, India. It's a sacred pilgrimage site and one of the 12 Jyotirlingas of Lord Shiva</p>
         </div>
     </div>
-        <div id="about"><h3>About Us</h3>
+        <div id="about"><h1>About Us</h1>
             <p>Welcome to Deep Travelers, your trusted guide to exploring India's rich history and heritage. We specialize in curating unforgettable journeys to the most iconic historical places in India, offering deep insights into their cultural and architectural significance. Whether it’s the grandeur of the Taj Mahal, the majestic forts of Rajasthan, or the ancient temples of South India, our expert team ensures a seamless and enriching travel experience. With personalized itineraries, knowledgeable guides, and exceptional service, we bring history to life, making every trip a journey through time. Let us take you on an adventure where the past meets the present!</p>
         </div>
     <footer id="contact">
-        <a href="https://temp-mail.org/en/" class="ft">Contact</a>
-        <a href="https://www.facebook.com/help/1058033620955509/" class="ft">Facebook</a>
-        <a href="https://www.instagram.com/accounts/login/?hl=en" class="ft">Instagram</a>
+        <h1> Contact</h1>
+        <div class="con">
+        <div>
+        <h2 class="ft">Contact Us</h2>
+        
+        <pre> <i class="fa-solid fa-phone"> </i>  +917465982565</pre>
+        <pre><i class="fa-solid fa-envelope"></i>  xyz@gmail.com</pre>
+    </div>
+    <div>
+        <h1>Follow Us</h1>
+        <pre class="ft"><i class="fa-brands fa-facebook"></i>  <a href="https://developers.facebook.com/docs/facebook-login/web/">Facebook</a></pre>
+        <pre class="ft"><i class="fa-brands fa-instagram"></i> <a href="https://www.instagram.com/accounts/login/?hl=en"> Instagram</a></pre>
+        <pre class="ft"><i class="fa-solid fa-x"></i> <a href="https://x.com/i/flow/login"> X</a></pre>
+    </div>
+</div>
     </footer>
 </body>
 </html>
+p
